@@ -1,2 +1,22 @@
-1. Book List App.
-2. Rock Paper Scissors Game.
+- [x] Book List App.
+- [x] Rock Paper Scissors Game.
+- [x] PassGenerator
+- [x] semiPiano
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
