@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 * {
   margin: 0;
@@ -13,12 +13,16 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #e3f2fd;
+  padding: 20px;
 }
 
 .wrapper {
-  padding: 35px 40px;
+  padding: 20px;
   border-radius: 20px;
   background: #141414;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
@@ -26,15 +30,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h2 {
   font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .column {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .column span {
@@ -76,7 +83,9 @@ header h2 {
 
 .piano-keys {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .piano-keys .key {
@@ -85,21 +94,24 @@ header h2 {
   position: relative;
   text-transform: uppercase;
   list-style: none;
+  margin: 2px;
 }
 
 .piano-keys .white {
-  width: 70px;
-  height: 230px;
+  width: calc(10% - 4px);
+  height: auto;
+  aspect-ratio: 2/7;
   border: 1px solid #000;
   border-radius: 8px;
   background: linear-gradient(#fff 96%, #eee 4%);
 }
 
 .piano-keys .black {
-  width: 44px;
-  height: 140px;
+  width: calc(7% - 4px);
+  height: auto;
+  aspect-ratio: 2/5;
   z-index: 2;
-  margin: 0 -22px 0 -22px;
+  margin: -1px calc(-3.5% - 2px);
   border: 1px solid #000;
   border-radius: 0 0 5px 5px;
   background: linear-gradient(#333, #000);
@@ -110,7 +122,7 @@ header h2 {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  font-size: 1.13rem;
+  font-size: 1rem;
 }
 
 .piano-keys .white.active {
@@ -122,6 +134,39 @@ header h2 {
   box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
   background: linear-gradient(to bottom, #000, #434343);
 }
+
 .piano-keys .key.hide span {
   display: none;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.4rem;
+  }
+
+  .piano-keys .white,
+  .piano-keys .black {
+    width: calc(12% - 4px);
+  }
+
+  .piano-keys .black {
+    margin: -1px calc(-4% - 2px);
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .piano-keys .white,
+  .piano-keys .black {
+    width: calc(15% - 4px);
+  }
+
+  .piano-keys .black {
+    margin: -1px calc(-5.5% - 2px);
+  }
+}
+
