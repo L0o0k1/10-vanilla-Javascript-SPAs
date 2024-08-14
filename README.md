@@ -1,7 +1,7 @@
 - [x] Book List App.
 - [x] Rock Paper Scissors Game.
 - [x] PassGenerator
-- [x] semiPiano
+- [x] semi Piano
 - []
 - []
 - []
