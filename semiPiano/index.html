@@ -4,42 +4,36 @@
     <meta charset="utf-8" />
     <title>Semi Piano</title>
     <link rel="stylesheet" href="main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
     <header>
       <h2>Semi Piano</h2>
-      <div class="column volume-slider">
-        <span> Volume <input type="range" /> </span>
-      </div>
       <div class="column keys-checkbox">
-        <span> Show Keys <input type="checkbox" /> </span>
+        <span>Show Keys</span><input type="checkbox"/> 
       </div>
     </header>
-    <ui class="piano-keys">
-      <li class="key white"><span>a</span></li>
-      <li class="key black"><span>b</span></li>
-      <li class="key white"><span>c</span></li>
-      <li class="key black"><span>d</span></li>
-      <li class="key white"><span>e</span></li>
-      <li class="key black"><span>f</span></li>
-      <li class="key white"><span>g</span></li>
-      <li class="key black"><span>h</span></li>
-      <li class="key white"><span>i</span></li>
-      <li class="key black"><span>j</span></li>
-      <li class="key white"><span>k</span></li>
-      <li class="key black"><span>l</span></li>
-      <li class="key white"><span>m</span></li>
-      <li class="key black"><span>n</span></li>
-      <li class="key white"><span>o</span></li>
-      <li class="key black"><span>p</span></li>
-      <li class="key black"><span>q</span></li>
-      <li class="key white"><span>r</span></li>
-      <li class="key black"><span>s</span></li>
-      <li class="key white"><span>t</span></li>
-      <li class="key black"><span>u</span></li>
-      <li class="key white"><span>v</span></li>
-    </ui>
+    <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>;</span></li>
+    </ul>
+     
   </body>
 </html>
