@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9a55a3, #6a3093);
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  font-size: 50px;
+  color: #4caf50;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-field input {
+  width: 55px;
+  height: 55px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  background-color: #e9d1d1;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-field input:focus {
+  border-color: #ce6bc6;
+  outline: none;
+}
+
+.input-field input:disabled {
+  background-color: #ececec;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgb(190, 43, 196);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+button:hover {
+  background-color: #1c9e27;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}

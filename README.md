@@ -1,13 +1,12 @@
 - [x] Book List App.
 - [x] Rock Paper Scissors Game.
-- [x] PassGenerator
-- [x] semi Piano
-- []
-- []
-- []
-- []
-- []
-- []
+- [x] PassGenerator.
+- [x] semi Piano.
+- [] OTP Code Verification
+- [] Internet Checker.
+- [] QR Code Generator.
+- [] Responsive Login and Registration.
+- [] Validateing Email and Password.
 - []
 - []
 - []
