@@ -2,7 +2,7 @@
 - [x] Rock Paper Scissors Game.
 - [x] PassGenerator.
 - [x] semi Piano.
-- [] OTP Code Verification
+- [x] OTP Code Verification
 - [] Internet Checker.
 - [] QR Code Generator.
 - [] Responsive Login and Registration.
