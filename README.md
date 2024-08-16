@@ -3,11 +3,10 @@
 - [x] PassGenerator.
 - [x] semi Piano.
 - [x] OTP Code Verification
-- [] Internet Checker.
+- [x] Location Detactor.
 - [] QR Code Generator.
 - [] Responsive Login and Registration.
 - [] Validateing Email and Password.
-- []
 - []
 - []
 - []
