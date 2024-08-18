@@ -7,14 +7,4 @@
 - [] QR Code Generator.
 - [] Responsive Login and Registration.
 - [] Validateing Email and Password.
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
+
