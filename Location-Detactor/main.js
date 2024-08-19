@@ -2,7 +2,7 @@ const btn = document.getElementById("detect-btn");
 
 btn.addEventListener("click", () => {
   if (navigator.geolocation) {
-    btn.innerText = "Allow to detect location";
+    btn.textContent = "Allow to detect location";
     navigator.geolocation.getCurrentPosition(onSUC, onERR);
   } else {
     btn.textContent = "Your browser does not support geolocation.";
@@ -10,25 +10,25 @@ btn.addEventListener("click", () => {
 });
 
 function onSUC(pos) {
-  btn.innerText = "Detecting Your Location..";
+  btn.textContent = "Detecting Your Location..";
   const { latitude, longitude } = pos.coords;
 
   fetch(
     `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`
-  ).then((response) =>
-    response
-      .json()
-      .then((result) => {
-        let allDetails = result.results[0].componants;
-        let { county, postcode, country } = allDetails;
-        btn.innerText = `${county}, ${postcode}, ${country}`;
-        console.table(allDetails);
-      })
-      .catch(() => {
-        btn.innerText = "Allow to detect location";
-      })
-  );
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      let allDetails = result.results[0].components;
+      let { county, postcode, country } = allDetails;
+      btn.textContent = `${county}, ${postcode}, ${country}`;
+      console.table(allDetails);
+    })
+    .catch((error) => {
+      console.error("Failed to fetch location data", error);
+      btn.textContent = "Allow to detect location";
+    });
 }
+
 function onERR(err) {
   const locationInfo = document.getElementById("location-info");
   locationInfo.classList.add("error");
