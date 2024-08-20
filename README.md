@@ -5,6 +5,6 @@
 - [x] OTP Code Verification
 - [x] Location Detactor.
 - [x] QR Code Generator.
-- [] Responsive Login and Registration.
+- [x] Responsive Registration Page.
 - [] Validateing Email and Password.
 
