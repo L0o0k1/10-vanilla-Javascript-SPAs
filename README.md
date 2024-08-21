@@ -6,5 +6,6 @@
 - [x] Location Detactor.
 - [x] QR Code Generator.
 - [x] Responsive Registration Page.
-- [] Validateing Email and Password.
+- [x] Pomodoro Timer
+- [x] Fake Sales
 
