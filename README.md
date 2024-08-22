@@ -5,7 +5,7 @@
 - [x] OTP Code Verification
 - [x] Location Detactor.
 - [x] QR Code Generator.
-- [x] Responsive Registration Page.
+- [x] Responsive Registration/Login Page.
 - [x] Pomodoro Timer
 - [x] Fake Sales
 
