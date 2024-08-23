@@ -7,5 +7,5 @@
 - [x] QR Code Generator.
 - [x] Responsive Registration/Login Page.
 - [x] Pomodoro Timer
-- [x] Fake Sales
+- [x] Dashboard Panel
 
